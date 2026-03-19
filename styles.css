@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+    font-family: "SN Pro", sans-serif;
+}
+
+body::selection {
+    background-color: black;
+    color: antiquewhite
+}
+
+.flex-container {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header {
+
+    align-self: center;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 20px auto;
+
+}
+
+.actions {
+    display: grid;
+    padding: 0;
+    border-left: 2px #311e00 solid;
+}
+
+.actions button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    translate: -52%;
+    border: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.actions button:hover {
+    background-color: gray;
+    width: 25px;
+    height: 25px;
+}
+
+.dates {
+    display: grid;
+}
+
+.submit {
+    border-radius: 15px;
+    height: 60px;
+    width: 220px;
+    font-family: "mono-space", sans-serif;
+    border: 2px black solid;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+
+.submit a {
+    text-decoration: none;
+    color: #979797;
+    width: 100%;
+}
+
+.submit a:hover,
+.submit:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.flex-container-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 650px;
+    grid-template-rows: auto 25px auto;
+    justify-content: center;
+
+}
+
+.flex-dates {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-actions {
+    display: flex;
+    border-top: 2px rgb(0, 0, 0) solid;
+    text-align: center;
+}
+
+.flex-actions button {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: 0;
+    border-radius: 50%;
+    translate: 220% -52%;
+}
